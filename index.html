@@ -36,19 +36,19 @@
 
     /* First image (Logo. Full height) */
     .bgimg-1 {
-        background-image: url('https://mfuechec-portfolio.s3.us-east-2.amazonaws.com/beautiful-sky.jpg');
+        background-image: url('https://markportfolioimages.s3.amazonaws.com/beautiful-sky.jpg');
         min-height: 100%;
     }
 
     /* Second image (Portfolio) */
     .bgimg-2 {
-        background-image: url("https://mfuechec-portfolio.s3.us-east-2.amazonaws.com/sky-sky.jpg");
+        background-image: url("https://markportfolioimages.s3.amazonaws.com/sky-sky.jpg");
         min-height: 400px;
     }
 
     /* Third image (Contact) */
     .bgimg-3 {
-        background-image: url("https://mfuechec-portfolio.s3.us-east-2.amazonaws.com/blue-sky.jpg");
+        background-image: url("https://markportfolioimages.s3.amazonaws.com/blue-sky.jpg");
         min-height: 400px;
     }
 
@@ -89,9 +89,7 @@
             <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT ME</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> MY WORK</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT ME</a>
-            <a href="https://github.com/mfuechec" class="w3-bar-item w3-button w3-hide-small w3-right"><img
-                    height='20px'
-                    src="https://mfuechec-portfolio.s3.us-east-2.amazonaws.com/GitHub-Mark-32px.png"></i></a>
+            <a href="https://github.com/mfuechec" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-github w3-hover-opacity"></i></a>
             <a href="https://www.linkedin.com/in/mfuechec/" class="w3-bar-item w3-button w3-hide-small w3-right"><i
                     class="fa fa-linkedin w3-hover-opacity"></i></a>
         </div>
@@ -120,22 +118,24 @@
         <h3 class="w3-center">ABOUT ME</h3>
         <p class="w3-center"><em>Hi!</em></p>
         <p>I've always been interested in technology. In a previous life I often wrote about things like automation
-            and machine learning as a professional journalist. About a year ago I finally decided to turn that interest
+            and machine learning as a journalist. About two and a half years ago, I finally decided to turn that interest
             into a career in software engineering.</p>
 
-        <p>I enrolled in Hack Reactor's full stack software engineering immersive program in September and when I
-            graduated in January I had solid skills in JavaScript, React, and Node, an understanding of both NoSQL and
-            SQL databases, a love of deployment using AWS' services, and experience using those tools in an Agile team
-            environment.</p>
+        <p>Since then, I've worked on a number of interesting and challenging projects. I spent nearly a year building 
+            React Native apps for different very-early stage startups as I worked freelance alongside three of my fellow 
+            graduates from Hack Reactor's software engineering bootcamp.</p>
 
-        <p>Since graduation I've continued to polish those skills, and learn new ones. In my personal projects I've
-            gained expertise in technologies like TypeScript, React Hooks, GraphQL and SCSS, among others.</p>
+        <p>In December 2010, I began working full-time with Agrian - an agriculture technology company. During my first 
+            8-10 months I worked alongside three other engineers to publish the company's InField app - a record-keeping/messaging 
+            app that has already enjoyed wide uptake among large-scale farming operations.</p>
 
-        <p>I am interested in finding a place to use these skills alongside a supportive and dynamic team.
-        </p>
+        <p>Since Agrian's recent acquisition by Telus Agriculture, my team has stopped adding new features to InField and are now 
+            beginning to develop a web/mobile portal that will eventually allow customers access to all the company's products. Like 
+            InField, this new project has a heavy focus on visual maps and communication between users, while challenging myself and 
+            my team to find solutions for users that move frequently in and out of internet service.</p>
 
         <div class="w3-row w3-center">
-            <img src="https://mfuechec-portfolio.s3.us-east-2.amazonaws.com/myGravitar.jpg"
+            <img src="https://markportfolioimages.s3.amazonaws.com/myGravitar.jfif"
                 class="w3-center w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300"
                 height="333">
             <!-- Hide this text on small devices -->
@@ -191,19 +191,35 @@
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
         <h3 class="w3-center">MY WORK</h3>
-        <p class="w3-center"><em>Here are some of my latest projects.</em></p><br>
+        <p class="w3-center"><em>Here are some of the apps I've worked on.</em></p><br>
+
+        <div class="w3-center">
+            <div style="display: inline;">
+                <div style="clear: both; margin-bottom: 125px">
+                    <h1>InField</h1>
+                    <img src="https://markportfolioimages.s3.amazonaws.com/InField.PNG"
+                        style="height:200px;float:none" onclick=window.open("https://apps.apple.com/us/app/infield/id409704374")
+                        class="w3-hover-opacity" alt="InField Logo">
+                    <p style='float: right;'>I joined Agrian at the end of 2020 as the fourth engineer on their InField team. 
+                        As one of two front-end engineers on the team, I touched all parts of the app.</p>
+                    <p>In particular, I put a lot of time into the styling and functionality of the maps, InField's messaging 
+                        system and hooking the app up to Agrian's custom analytics service.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
 
         <div class="w3-center">
             <div style="display: inline;">
                 <div style="clear: both; margin-bottom: 125px">
                     <h1>MostDays</h1>
-                    <img src="https://mfuechec-portfolio.s3.us-east-2.amazonaws.com/Most-Days.png"
+                    <img src="https://markportfolioimages.s3.amazonaws.com/Most-Days.png"
                         style="height:200px;float:none" onclick=window.open("https://apps.apple.com/us/app/most-days/id1531169665")
                         class="w3-hover-opacity" alt="MostDays Logo">
-                    <p style='float: right;'>In my most recent work as a software engineering consultant I worked on a social media app
-                        designed to help people in addiction recovery find support and encouragement as they work to change their lives.</p>
-                    <p>I worked on the app's front-end team alongside three other engineers. We used React Native, React Native Navigation and Redux to build the 
-                        front-end to match design team wireframes and interacted with a PHP server and MySQL database on the backend.
+                    <p style='float: right'>My last project as a freelance engineer was building out the MVP for MostDays - a mental 
+                        health app that allowed people in addiction recovery to connect with support communities through their phones.</p>
+                    <p>I worked on the app's front-end team alongside three other engineers. We used React Native, React Native Navigation 
+                        and Redux to build the front-end alongside a UI team feeding us designs and a backend team using PHP and MySQL.</p>
                     </p>
                 </div>
             </div>
@@ -234,7 +250,7 @@
 
         <div class="w3-row w3-padding-32 w3-section">
             <div class="w3-half m4 w3-container">
-                <img src="https://mfuechec-portfolio.s3.us-east-2.amazonaws.com/austin-texas.jpg"
+                <img src="https://markportfolioimages.s3.amazonaws.com/austin-texas.jpg"
                     class="w3-image w3-round" style="width:100%">
             </div>
             <div class="w3-half m8 w3-panel">
@@ -269,9 +285,7 @@
         <div class="w3-xlarge w3-section">
             <i class="fa fa-facebook-official w3-hover-opacity"
                 onclick=window.open("https://www.facebook.com/profile.php?id=29620102")></i>
-            <i class="w3-hover-opacity"><img
-                    src="https://mfuechec-portfolio.s3.us-east-2.amazonaws.com/GitHub-Mark-Light-32px.png"
-                    onclick=window.open("https://github.com/mfuechec")></i>
+            <i class="fa fa-github w3-hover-opacity" onclick=window.open("https://github.com/mfuechec")></i>
             <i class="fa fa-linkedin w3-hover-opacity" onclick=window.open("https://www.linkedin.com/in/mfuechec/")></i>
         </div>
     </footer>
